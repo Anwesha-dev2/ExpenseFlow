@@ -1,83 +1,44 @@
-# ExpenseFlow
+ExpenseFlow
 
-## Expense Reimbursement Management System
+### Expense Reimbursement Management System
 
-ExpenseFlow is a simple Java and MySQL project made to understand how expense reimbursement systems work in companies.
+ExpenseFlow is a backend project I am building using **Core Java, JDBC and MySQL**.
 
-In this project, employees can submit expenses, managers can approve or reject them, and finance can process reimbursements. The project also includes reports and basic validation rules.
+The main idea is to manage employee expenses and their approval and reimbursement process.
 
----
+## What it does
 
-# Features
+- Employees can submit expenses
+- Employees can view their expenses
+- Managers can approve or reject expenses
+- Finance can process reimbursements
+- Expense status can be tracked
+- Reports can be generated using SQL
+- Important actions can be recorded in an audit log
 
-- Employee expense submission
-- Manager approval/rejection
-- Finance reimbursement process
-- Expense status tracking
-- Monthly expense reports
+## Technology Used
 
----
-
-# Technologies Used
-
-- Core Java
+- Java
 - JDBC
 - MySQL
 - SQL
+- MySQL Workbench
+- VS Code
+- Git & GitHub
 
----
+## Database
 
-# Database Tables
+The project currently uses four main tables:
 
-- users
-- expenses
-- approvals
-- audit_log
+- `users`
+- `expenses`
+- `approvals`
+- `audit_log`
 
----
-
-# Business Rules
-
-- Food expense limit: ₹500
-- Travel expense limit: ₹5000
-- Only approved expenses can be reimbursed
-
----
-
-# Workflow
+The database files are kept separately:
 
 ```text
-Employee → Manager → Finance
-```
-
-```text
-SUBMITTED → APPROVED → REIMBURSED
-```
-
-OR
-
-```text
-SUBMITTED → REJECTED
-```
-
----
-
-# How to Run
-
-1. Run `schema.sql` and `sample_data.sql` in MySQL Workbench
-2. Add MySQL JDBC connector inside `lib/`
-3. Compile Java files
-4. Run `ExpenseApp.java`
-
----
-
-# Learning From This Project
-
-- JDBC connectivity
-- SQL joins and queries
-- Role-based workflow
-- Backend validation logic
-- Database relationships
-- Report generation using SQL
-- Database design
-- Enterprise application concepts
+database/
+├── schema.sql
+├── sample_data.sql
+└── queries.sql
