@@ -1,4 +1,4 @@
-ExpenseFlow
+EXPENSEFLOW
 
 ### Expense Reimbursement Management System
 
